@@ -1,0 +1,763 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+/*共通*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", "游ゴシック", YuGothic, "メイリオ", Verdana,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+  color: #000;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 6rem;
+  padding: 0 0 0 2rem;
+  box-sizing: border-box;
+  opacity: 90%;
+  background-color: #000;
+}
+
+.header.change-color {
+  color: #000;
+}
+
+.logo a {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.cover-img {
+  position: relative;
+}
+
+.cover-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Caveat", cursive;
+}
+
+.cover-img i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 13rem;
+  font-size: 8rem;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.news-list li {
+  padding: 2rem 0;
+  margin-bottom: 0;
+  border-bottom: 1px #333 solid;
+}
+
+.news-list li:first-child {
+  border-top: 1px #333 solid;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.sp-nav {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 4rem;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #000;
+  box-sizing: border-box;
+}
+
+.sp-nav li {
+  margin-bottom: 4rem;
+}
+
+.sp-nav a {
+  color: #fff;
+}
+
+.pc-nav-list {
+  display: none;
+}
+
+.sp-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.ttl-wrap,
+section-ttl {
+  text-align: center;
+  padding: 5rem 0 5rem 0;
+}
+
+.section-ttl {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  font-size: 3rem;
+  font-family: "Caveat", cursive;
+  margin: 0 auto;
+  border-bottom: 4px solid #b19833;
+}
+
+.more {
+  color: #b19833;
+}
+
+.link-box {
+  text-align: right;
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.container-concept {
+  text-align: center;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 112rem;
+}
+
+.concept-txt {
+  margin: 0 2rem;
+}
+
+.container-concept h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.container-concept p {
+  margin-bottom: 4rem;
+}
+
+.container-news-sub {
+  margin-bottom: 10rem;
+}
+
+.container-news li {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news {
+  margin-bottom: 2rem;
+}
+
+.news-list {
+  margin: 0 2rem;
+  list-style: none;
+}
+
+.news-list-date {
+  display: block;
+  color: #777;
+  font-size: 1.4rem;
+  font-weight: 300;
+  font-family: "Caveat", cursive;
+}
+
+.container-menu h2 {
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.container-menu p {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-item {
+  margin: 4rem 2rem;
+  margin: 0 auto;
+}
+
+.box-item p,
+h2 {
+  text-align: center;
+}
+
+.txt-menu {
+  margin: 2rem;
+}
+
+.container-shop {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-shop img {
+  width: 100%;
+}
+
+.container-info {
+  padding: 0 2rem;
+}
+
+tr,
+td {
+  width: 65%;
+  text-align: left;
+  padding: 1rem;
+}
+
+.button {
+  text-decoration: none;
+  border: 1px solid #000;
+  color: #fff;
+  padding: 1.5rem 3rem;
+  background-color: #000;
+}
+
+.button-wrap {
+  text-align: left;
+  padding: 5rem 0;
+}
+
+.copyright {
+  margin: 0 auto;
+  color: #fff;
+  align-items: center;
+}
+
+small {
+  font-size: 0.5rem;
+}
+
+.footer-address {
+  margin-top: 2rem;
+}
+
+.footer-sns {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 5rem 0;
+}
+
+.footer-sns li {
+  border-radius: 50%;
+  padding: 0 1rem;
+}
+
+.footer-sns a {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.1;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+footer {
+  display: flex;
+  text-align: center;
+  padding: 2rem 0 2rem;
+  font-size: 0.5rem;
+  font-weight: 100;
+  opacity: 98%;
+  background-color: #000;
+}
+
+.shop-img {
+  padding: 0 2rem 2rem 2rem;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shop-item:first-child {
+  margin-bottom: 1.4rem;
+}
+
+.footer-sns a:hover {
+  opacity: 1;
+  color: #000;
+  background-color: #fff;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  align-items: normal;
+}
+
+.contents img {
+  width: 100%;
+}
+
+.txt {
+  margin: 2rem;
+}
+
+.txt p {
+  padding: 1rem;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  display: none;
+}
+
+.sp-ttl {
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: #b19833;
+  padding: 1rem 0;
+  margin-bottom: 2rem;
+}
+
+.menu-ttl {
+  display: none;
+}
+
+/* メニューページ
+------------------------------------------------------------*/
+.menu-page {
+  margin-bottom: 10rem;
+}
+
+/* PC表示 768px以上
+------------------------------------------------------------*/
+@media (min-width: 769px) {
+  .logo {
+    font-size: 2.8rem;
+    padding-left: 2rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .sp-nav {
+    display: none;
+  }
+
+  .pc-nav {
+    display: block;
+  }
+
+  .pc-nav li:hover {
+    opacity: 70%;
+  }
+
+  .pc-nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 2rem;
+    color: #fff;
+  }
+
+  .pc-nav-list li {
+    padding: 0 2rem 0 2rem;
+  }
+
+  .pc-nav-list a {
+    color: #fff;
+  }
+
+  .pc-nav {
+    display: block;
+  }
+
+  .cover-img h1 {
+    font-size: 6rem;
+  }
+
+  .cover-img i {
+    font-size: 10rem;
+    margin-top: 3rem;
+  }
+
+  .section-ttl {
+    font-size: 3.5rem;
+  }
+
+  .ttl-wrap {
+    padding: 10rem 0 5rem 0;
+  }
+
+  .container-menu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .news-list {
+    margin: 0 20% 2rem;
+  }
+
+  .news-list li {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .box-item {
+    margin: 0 2rem;
+  }
+
+  .shop {
+    padding-bottom: 5rem;
+  }
+
+  .container-shop {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .shop-info {
+    margin-left: 4rem;
+  }
+
+  tr,
+  td {
+    padding-right: 0;
+  }
+
+  .container-info {
+    display: flex;
+    padding-right: 0;
+  }
+
+  .footer-sns {
+    margin: 5rem;
+  }
+
+  .footer-sns a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #000;
+    align-items: center;
+  }
+
+  .footer-sns li {
+    padding: 0 4rem;
+  }
+
+  .copyright {
+    font-size: 2rem;
+  }
+
+  .nav-list a:hover {
+    border-bottom: 1px solid #fff;
+  }
+
+  .button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #000;
+  }
+
+  /*メニューページ*/
+  .contents:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .contents:nth-child(even) {
+    flex-direction: row;
+  }
+
+  .contents {
+    margin-bottom: 4rem;
+    align-items: center;
+  }
+
+  .contents img {
+    width: 40%;
+    height: 90%;
+  }
+
+  .contents img:nth-child(even) {
+    padding-top: 3%;
+  }
+  .txt {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6%;
+  }
+
+  .contents-box {
+    margin: 0 4%;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  .sp-ttl {
+    display: none;
+  }
+
+  .Menu {
+    margin-bottom: 12rem;
+  }
+
+  .menu-ttl h2 {
+    text-align: left;
+    padding-left: 1rem;
+    border-bottom: 1px solid #b19833;
+  }
+
+  .menu-ttl {
+    display: block;
+    margin-bottom: 1rem;
+  }
+}
