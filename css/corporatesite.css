@@ -117,6 +117,7 @@ a {
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  text-decoration: none;
 }
 
 /* change colours to suit your needs */
@@ -403,10 +404,6 @@ header h2 {
 .recruit-info,
 .company-info {
   margin-bottom: 2rem;
-}
-
-#sns {
-  padding: 4rem 0 2rem;
 }
 
 .sns-container {
