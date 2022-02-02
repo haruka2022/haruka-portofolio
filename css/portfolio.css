@@ -177,8 +177,8 @@ body {
   font-weight: 400;
   line-height: 2;
   color: #333;
-  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "Noto Sans JP", "游ゴシック", YuGothic, "メイリオ", Verdana,
+  "Hiragino Kaku Gothic ProN", Meiryo, sans-serif";
 }
 
 img {
@@ -224,6 +224,7 @@ a:visited {
 .profile-about {
   line-height: 3;
   font-weight: 300;
+  padding-left: 4rem;
 }
 
 .profile-about li {
@@ -670,6 +671,10 @@ textarea {
     font-weight: 100;
     margin: 10rem 0 10rem 0;
     letter-spacing: 1.4rem;
+  }
+
+  .profile-about {
+    padding: 0;
   }
 
   .about {
