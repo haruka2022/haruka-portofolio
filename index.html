@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8" />
-    <title>Haruka Iwata - Portfoliosite</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>works - banner</title>
     <link rel="icon" href="./images/favicon1.ico" id="favicon" />
     <link
       rel="apple-touch-icon-2."
       sizes="180x180"
       href="./images/apple-touch-icon-1.180x180.png"
     />
-    <meta name="description" content="岩田 悠のポートフォリオサイトです。" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ページの説明が入ります" />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/portfolio.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      <!--
-      Font
-      Awesome
-      --
     />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/4c0ed25435.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
+    <!-- ヘッダー -->
     <header>
       <!--ハンバーガーメニュー-->
       <div id="nav-button" class="nav-button">
@@ -34,160 +34,203 @@
       </div>
       <nav class="sp-nav">
         <ul class="sp-nav-list">
-          <li><a href="./index.html" class="header-nav">Home</a></li>
-          <li><a href="#about" class="header-nav">About</a></li>
-          <li><a href="#skills" class="header-nav">Skills</a></li>
-          <li><a href="./works.html" class="header-nav">Works</a></li>
-          <li><a href="#contact" class="header-nav">Contact</a></li>
+          <li>
+            <a href="./index.html" class="header-nav">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#about" class="header-nav">About</a>
+          </li>
+          <li>
+            <a href="./index.html#skills" class="header-nav">Skills</a>
+          </li>
+          <li>
+            <a href="#works" class="header-nav">Works</a>
+          </li>
+          <li>
+            <a href="./index.html#contact" class="header-nav">Contact</a>
+          </li>
         </ul>
       </nav>
       <!-- PCナビゲーション -->
       <nav class="pc-nav">
         <ul class="pc-nav-list">
-          <li><a href="#about" class="header-nav">About</a></li>
-          <li><a href="#skills" class="header-nav">Skills</a></li>
-          <li><a href="./works.html" class="header-nav">Works</a></li>
-          <li><a href="#contact" class="header-nav">Contact</a></li>
+          <li>
+            <a href="./index.html" class="header-nav">Home</a>
+          </li>
+          <li>
+            <a href="./index.html#about" class="header-nav">About</a>
+          </li>
+          <li>
+            <a href="./index.html#skills" class="header-nav">Skills</a>
+          </li>
+          <li>
+            <a href="#works" class="header-nav">Works</a>
+          </li>
+          <li>
+            <a href="./index.html#contact" class="header-nav">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
+
+    <!-- メイン -->
     <main>
-      <!-- プロフィール -->
       <section class="profile">
-        <h1>HARUKA IWATA</h1>
-        <picture>
-          <source media="(max-width:769px)" srcset="./images/sp-cover.png" />
-          <img src="./images/cover-img7.png" alt="プロフィール写真" />
-        </picture>
-      </section>
-      <section class="about" id="about">
-        <!-- about -->
-        <h2 class="ttl">About</h2>
-        <div class="contents">
-          <img
-            src="./images/S__38846472.jpg"
-            alt="プロフィール写真2"
-            class="myphoto"
-          />
-          <div class="profile-about">
-            <p class="name">岩田 悠 - Haruka Iwata</p>
-            <ul class="profile-sns">
-              <li class="mail">
-                <a href="mailto:harukaiwata2021@gmail.com"
-                  ><i class="far fa-envelope" aria-label="お問い合わせ"></i
-                ></a>
-                Mail : harukaiwata0720@gmail.com
-              </li>
-              <li class="twitter">
-                <a href="https://twitter.com/home"
-                  ><i class="fab fa-twitter" aria-label="Twitter"></i
-                ></a>
-                Twitter : @R70fRcVtaCtbDqZ
-              </li>
-              <li class="instagram">
-                <a href="https://www.instagram.com/harukaiwata7/?hl=ja"
-                  ><i class="fab fa-instagram" aria-label="Instagram"></i
-                ></a>
-                Instagram : @haruka7
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="txt-wrapper">
-          <p>
-            前職ではドラッグストアの店員として1年9ヶ月勤めました。初めて社会人として働く中で自分自身への理解が深まり、より自分の強みが活かせる環境で働きたいということと、新たなことに挑戦したいという思いが強まり、Webデザイナーへの転職を決意いたしました。独学でPhotoshop、HTML/CSSを学んだ後、より理解を深めるためオンラインスクールに約3ヶ月通いました。まだまだ至らない点も多いかと思いますが、今後も常にアンテナを張り日々勉強し続け、市場価値の高い人材になることが目標です。
-          </p>
-        </div>
-      </section>
-      <!-- skills -->
-      <section class="skills" id="skills">
-        <h2 class="ttl">Skills</h2>
-        <div class="container">
-          <div class="skills-box">
-            <div class="skills-box-heading">
-              <i class="fas fa-laptop" aria-hidden="true"></i>
-              <h3 class="uppercase">Coding</h3>
-            </div>
-            <p>
-              HTML/CSSでのコーディングができます。全体の色合いやイメージ、そのサイトの目的などを丁寧にヒアリングしながらご要望に合わせたコーディングをさせていただきます。また、それぞれのデバイスに合わせたレスポンシブデザインも可能です。
-            </p>
-          </div>
-          <div class="skills-box">
-            <div class="skills-box-heading">
-              <i class="fas fa-solid fa-image" aria-hidden="true"></i>
-              <h3 class="uppercase">Photoshop</h3>
-            </div>
-            <p>
-              Photoshopを用いた画像加工やデザインカンプの作成が可能です。スクールで学ぶ以前にも趣味で画像加工していたことやオンラインで学んでいたこともあり、基本的な操作は問題なく行うことができます。ご要望に合わせてデザインカンプからコーディングまで行うことが可能です。
-            </p>
-          </div>
-          <div class="skills-box">
-            <div class="skills-box-heading">
-              <i class="fas fa-solid fa-pen-nib" aria-hidden="true"></i>
-              <h3 class="uppercase">Design</h3>
-            </div>
-            <p>
-              ご要望に沿った様々なバリエーションのデザインをすることが可能です。元々画像加工が好きで、趣味で写真編集やCDのジャケットを制作していたため、色合いや余白の取り方、全体のコンセプトなどを考えた幅広いデザインが得意です。
-            </p>
-          </div>
-        </div>
+        <h1>WORKS</h1>
       </section>
       <!-- works -->
       <section class="works" id="works">
-        <h2 class="ttl">Works</h2>
-        <h2 class="works-ttl">Websites</h2>
-        <div class="works-contents">
-          <a href="./shopsite.html"
-            ><img src="./images/shopsite-mainvisual.png" alt="works-img1"
-          /></a>
-          <a href="./corporatesite.html"
-            ><img src="./images/corporatesite-mainvisual.png" alt="works-img1"
-          /></a>
-        </div>
-        <div class="link-box">
-          <a href="./works.html" class="more"
-            >more <i class="fas fa-angle-right"></i
-          ></a>
-        </div>
         <h2 class="works-ttl">Banners</h2>
-        <div class="works-contents2">
-          <img src="./images/banner1.png" alt="バナー1" />
-          <img src="./images/banner3.png" alt="バナー2" />
-          <img src="./images/banner2.png" alt="バナー3" />
-          <img src="./images/banner4.png" alt="バナー4" />
-          <img src="./images/banner5.png" alt="バナー2" />
-          <img src="./images/banner6.png" alt="バナー1s" />
+        <div class="works-contents-sub">
+          <div class="works-heading">
+            <h2>共通の目的</h2>
+            <p>ECサイトや実店舗への誘導、及び販売促進。</p>
+            <h2>使用ツール</h2>
+            <p>
+              Photoshop/著作権フリー素材
+              <a href="https://event-pre.com/archives/category/newyear">
+                (EVENTs design)</a
+              >
+            </p>
+            <p>
+              Unsplash
+              <a href="https://unsplash.com/">(Unsplash)</a>
+            </p>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <img src="./images/banner1.png" alt="バナー1" />
+            </div>
+            <div class="works-txt">
+              <h2>クーポンバナー</h2>
+              <ul>
+                <li>作成時間: 約2時間</li>
+                <li>ペルソナ: 20後半から30代の主に女性</li>
+                <li>
+                  工夫点:
+                  このバナーで意識したことは、伝えたい内容が視覚的にスムーズに伝わることです。ターゲット層が主に若い女性であることから高級感のあるモダンなサイトの印象が伝わるようデザインしました。また、中央に四角の枠で囲い余白を取って強調することで瞬時に中央に目が行きやすくなるようデザインしました。最近のトレンドのエフェクト等も意識し、見やすく洗練されたデザインに仕上げました。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <a href=""><img src="./images/banner3.png" alt="バナー1" /></a>
+            </div>
+            <div class="works-txt">
+              <h2>冬季セールバナー</h2>
+              <ul>
+                <li>作成時間: 約4時間</li>
+                <li>
+                  ペルソナ:
+                  年末にECサイトでお買い物をしようと考えている20～30代の男女
+                </li>
+                <li>
+                  工夫点:
+                  このバナー作成にあたって最も意識した点は内容が瞬時に伝わるようにデザインすることです。冬季キャンペーンということから冬を連想させる寒色系の色合いを使用し、一目で内容が伝わるように50%OFFのフォントを他の文字より大きくし、ドロップシャドウをかけることで目につきやすく他のバナーや記事に埋もれないよう作成しました。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <a href=""><img src="./images/banner2.png" alt="バナー1" /></a>
+            </div>
+            <div class="works-txt">
+              <h2>スクールバナー</h2>
+              <ul>
+                <li>作成時間: 約3時間</li>
+                <li>
+                  ペルソナ:
+                  近いうちにwebデザイナーになりたいと考えている20代男女
+                </li>
+                <li>
+                  工夫点:
+                  最も意識したのはターゲット層が何を求めているかを考え、逆算してデザインすることです。あくまで私の主観ですが、多くの人が未経験者向けのスクールに対して金額やITへの先入観などの要因から、入学に対してハードルの高さを感じているという印象を受けましたので、このバナーでは、具体的な期間を強調して表示し、青を基調とした透明感のある爽やかな印象にデザインすることで最初のハードルを低く感じられることとスクールの誠実さを直感的にイメージできるよう作成しました。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <a href=""><img src="./images/banner4.png" alt="バナー1" /></a>
+            </div>
+            <div class="works-txt">
+              <h2>期間限定キャンペーンバナー</h2>
+              <ul>
+                <li>作成時間: 約4時間</li>
+                <li>
+                  ペルソナ:
+                  電子決済やポイント還元などのキャンペーンに興味のある20代の男女
+                </li>
+                <li>
+                  工夫点:
+                  このバナーで意識したのは季節感をだすことです。ウィンターセールとは違い、新年の明るいイメージや和のイメージを感じられるよう赤や金をメインに荘厳な雰囲気やお得感を感じられるよう作成しました。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <a href=""><img src="./images/banner5.png" alt="バナー1" /></a>
+            </div>
+            <div class="works-txt">
+              <h2>オーダースーツバナー</h2>
+              <ul>
+                <li>作成時間: 約4時間</li>
+                <li>
+                  ペルソナ:20第前半の新社会人、もしくはこれから就活をする男性
+                </li>
+                <li>
+                  このバナーで意識したことは、男性をターゲットとしたデザインにすることです。男性の理想像を刺激するキャッチコピーや、全体的に青を基調としたデザインから誠実さや信頼感など男性らしさを感じられるデザインに仕上げました。
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="works-item">
+            <div class="works-img">
+              <a href=""><img src="./images/banner6.png" alt="バナー1" /></a>
+            </div>
+            <div class="works-txt">
+              <h2>通販バナー</h2>
+              <ul>
+                <li>作成時間: 4時間</li>
+                <li>ペルソナ:20～30代のミニマリズムに興味のある会社員男性</li>
+                <li>
+                  工夫点:
+                  このバナーで最も工夫した点は特定の層に絞って、顧客が求めている情報を提供することです。財布の最大の特徴である無駄を削ぎ落とす徹底したコンセプトを伝えるためにシンプルでストレートなキャッチコピーにし、過度な装飾を省くことでミニマルさを表現。また、色のバリエーションを配置することで幅広いニーズに対応できることがダイレクトに伝わるよう作成しました。
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="link-box">
-          <a href="./works-banner.html" class="more"
-            >more <i class="fas fa-angle-right"></i
+        <div class="button-wrap">
+          <a href="./works.html" class="button"
+            >Websites <i class="fas fa-angle-right"></i
           ></a>
-        </div>
-      </section>
-      <section class="contact" id="contact">
-        <h2 class="ttl">Contact</h2>
-        <div class="contact-info">
-          <p>Name</p>
-          <input type="text" />
-          <p>E-mail</p>
-          <input type="e-mail" />
-          <p>Message</p>
-          <textarea></textarea>
-        </div>
-        <div class="contact-button">
-          <input class="contact-submit" type="submit" value="送信" />
         </div>
       </section>
     </main>
-    <!-- footer -->
+
+    <!-- フッター -->
     <footer>
       <div class="footer-nav">
         <ul class="footer-nav-list">
-          <li><a href="#" class="header-nav">Home</a></li>
-          <li><a href="#about" class="header-nav">About</a></li>
-          <li><a href="#skills" class="header-nav">Skills</a></li>
-          <li><a href="./works.html" class="header-nav">Works</a></li>
-          <li><a href="#contact" class="header-nav">Contact</a></li>
+          <li>
+            <a href="./index.html" class="header-nav">Home</a>
+          </li>
+          <li>
+            <a href="./index.html #about" class="header-nav">About</a>
+          </li>
+          <li>
+            <a href="./index.html #skills" class="header-nav">Skills</a>
+          </li>
+          <li>
+            <a href="./index.html #works" class="header-nav">Works</a>
+          </li>
+          <li>
+            <a href="./index.html #contact" class="header-nav">Contact</a>
+          </li>
         </ul>
         <ul class="footer-sns">
           <li class="mail">
