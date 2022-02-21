@@ -450,15 +450,6 @@ a:visited {
   color: #333;
 }
 
-.books-items li {
-  margin: 0 auto;
-}
-
-.books-items {
-  display: flex;
-  flex-direction: row;
-}
-
 /*contact*/
 .contact {
   margin: 0 auto;
