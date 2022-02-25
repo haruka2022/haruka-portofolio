@@ -236,6 +236,8 @@ body {
 .sns a {
   color: #fff;
   font-size: 2.5rem;
+  padding: 1rem;
+  text-align: center;
 }
 
 .sns-items {
@@ -258,6 +260,17 @@ small {
 .footer {
   text-align: center;
   margin-top: 5rem;
+}
+
+/*hover*/
+.menu-items a:hover {
+  background-color: #174475;
+  transition: all 0.3s;
+}
+
+.sns-items li:hover {
+  border-bottom: 5px solid #174475;
+  transition: all 0.3s;
 }
 
 /*PC表示*/
