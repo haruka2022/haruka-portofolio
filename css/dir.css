@@ -1,70 +1,298 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drop Item Records Official Website</title>
-    <meta name="description" content="ページの説明が入ります" />
-    <!-- CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    />
-    <link rel="stylesheet" href="./css/dir.css" />
-    <!-- FontAwesome -->
-    <script
-      src="https://kit.fontawesome.com/4c0ed25435.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- メイン -->
-    <main>
-      <!-- ここにメインが入ります -->
-      <section class="main-logo">
-        <img src="./dir-img/logo.png" alt="logo" class="logo" />
-      </section>
-      <section class="menu">
-        <div class="container">
-          <ul class="menu-items">
-            <li>
-              <a href="">ABOUT</a>
-            </li>
-            <li>
-              <a href="">MEMBERS</a>
-            </li>
-            <li>
-              <a href="">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="sns">
-        <ul class="sns-items">
-          <li>
-            <a href="#">
-              <i class="far fa-envelope"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <!-- フッター -->
-    <section class="footer">
-      <!-- ここにフッターが入ります -->
-      <small>Copyright ©2016-2021 Drop-Item Records All Right Reserved.</small>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./js/hamburger.js"></script>
-  </body>
-</html>
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+ul {
+  list-style: none;
+}
+
+/*共通*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", "游ゴシック", YuGothic, "メイリオ", Verdana,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 1.75;
+  color: #000;
+  list-style: none;
+  background-image: url("../dir-img/sp-img.png");
+}
+
+/*logo*/
+
+.main-logo {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.logo {
+  width: 30rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+/*menu*/
+.menu {
+  margin-bottom: 5rem;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 2rem;
+  font-weight: 100;
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.container li {
+  padding: 2rem 0;
+  width: 100%;
+}
+
+/*sns*/
+.sns {
+  font-family: "Font Awesome 5 Free";
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.sns a {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.sns-items {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 30rem;
+}
+
+.sns-items li {
+  margin: 0 auto;
+}
+
+/*copyright*/
+small {
+  color: #174475;
+  font-size: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/*PC表示*/
+@media (min-width: 769px) {
+  body {
+    background-image: url(../dir-img/pc-img.png);
+  }
+
+  /*logo*/
+
+  .logo {
+    width: 60rem;
+    margin-top: 10rem;
+  }
+
+  /*menu*/
+  .menu {
+    margin-bottom: 5rem;
+  }
+
+  .menu-items {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 70rem;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .container li {
+    margin: 0 2rem;
+  }
+
+  .sns {
+    margin: 8rem;
+  }
+}
