@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drop Item Records Official Website</title>
+    <meta name="description" content="ページの説明が入ります" />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/dir.css" />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/4c0ed25435.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- メイン -->
+    <main>
+      <!-- ここにメインが入ります -->
+      <section class="main-logo">
+        <img src="./dir-img/logo.png" alt="logo" class="logo" />
+      </section>
+      <section class="menu">
+        <div class="container">
+          <ul class="menu-items">
+            <li>
+              <a href="">ABOUT</a>
+            </li>
+            <li>
+              <a href="">MEMBERS</a>
+            </li>
+            <li>
+              <a href="">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sns">
+        <ul class="sns-items">
+          <li>
+            <a href="#">
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- フッター -->
+    <section class="footer">
+      <!-- ここにフッターが入ります -->
+      <small>Copyright ©2016-2021 Drop-Item Records All Right Reserved.</small>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+  </body>
+</html>
