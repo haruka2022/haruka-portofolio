@@ -268,7 +268,6 @@ a:visited {
 }
 
 /*nav*/
-
 .sp-nav {
   display: none;
 }
@@ -303,7 +302,6 @@ a:visited {
 }
 
 /*skills*/
-
 .skills {
   margin-bottom: 5rem;
 }
@@ -345,16 +343,6 @@ a:visited {
 }
 
 /*works*/
-
-.books-items li {
-  margin: 0 auto;
-}
-
-.books-items {
-  display: flex;
-  flex-direction: row;
-}
-
 .works {
   margin-bottom: 5rem;
 }
@@ -462,6 +450,20 @@ a:visited {
   color: #333;
 }
 
+.books-items {
+  display: flex;
+  flex-direction: row;
+}
+
+.books-items li {
+  margin: 0 auto;
+}
+
+.books-items  li a:hover {
+  opacity: 0.8;
+}
+
+/*contact*/
 .contact {
   margin: 0 auto;
   padding: 0 4%;
@@ -496,7 +498,6 @@ textarea {
 }
 
 /*フッター*/
-
 .footer-nav {
   display: flex;
   justify-content: space-between;
@@ -560,6 +561,8 @@ textarea {
   cursor: pointer;
   transition: all 0.5s;
   color: #000;
+  /*h.i.20230223:*/
+  opacity: 0.8;
 }
 
 .footer-sns a:hover {
@@ -612,6 +615,11 @@ textarea {
   transition: all 0.5s;
   border: 1px solid #333;
   color: #333;
+}
+
+/*h.i.20230223*/
+.tn_works a:hover {
+  opacity: 0.8;
 }
 
 /* SP表示 768px以下 */
