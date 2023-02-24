@@ -788,8 +788,9 @@ textarea {
 
   .works-contents2 {
     flex-direction: column;
-    margin: 0 auto;
-    width: 60%;
+    /*h.i.20230224:margin: 0 auto->0 4%*/
+    margin: 0 4%;
+    /*width: 60%;*/
   }
 
   .works-contents2 img {
